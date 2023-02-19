@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B41814C82998CED6007AF3FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41814C72998CED6007AF3FE /* MainView.swift */; };
+		B41D59B229A1D8B800D9BD46 /* StateBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D59B129A1D8B700D9BD46 /* StateBootcamp.swift */; };
+		B46713D1297FE22B00BE467F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46713D0297FE22B00BE467F /* ContentView.swift */; };
 		B4A2035729742E060029D220 /* pratice1111App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A2035629742E060029D220 /* pratice1111App.swift */; };
-		B4A2035929742E060029D220 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A2035829742E060029D220 /* ContentView.swift */; };
 		B4A2035B29742E070029D220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A2035A29742E070029D220 /* Assets.xcassets */; };
 		B4A2035F29742E070029D220 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A2035E29742E070029D220 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B41814C72998CED6007AF3FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B41D59B129A1D8B700D9BD46 /* StateBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateBootcamp.swift; sourceTree = "<group>"; };
+		B46713D0297FE22B00BE467F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B4A2035329742E060029D220 /* pratice1111.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pratice1111.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A2035629742E060029D220 /* pratice1111App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pratice1111App.swift; sourceTree = "<group>"; };
-		B4A2035829742E060029D220 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B4A2035A29742E070029D220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4A2035C29742E070029D220 /* pratice1111.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pratice1111.entitlements; sourceTree = "<group>"; };
 		B4A2035E29742E070029D220 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -33,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B41D59B329A1DBFE00D9BD46 /* Bootcamp */ = {
+			isa = PBXGroup;
+			children = (
+				B41D59B129A1D8B700D9BD46 /* StateBootcamp.swift */,
+			);
+			path = Bootcamp;
+			sourceTree = "<group>";
+		};
 		B4A2034A29742E060029D220 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +64,10 @@
 		B4A2035529742E060029D220 /* pratice1111 */ = {
 			isa = PBXGroup;
 			children = (
+				B41D59B329A1DBFE00D9BD46 /* Bootcamp */,
+				B41814C72998CED6007AF3FE /* MainView.swift */,
 				B4A2035629742E060029D220 /* pratice1111App.swift */,
-				B4A2035829742E060029D220 /* ContentView.swift */,
+				B46713D0297FE22B00BE467F /* ContentView.swift */,
 				B4A2035A29742E070029D220 /* Assets.xcassets */,
 				B4A2035C29742E070029D220 /* pratice1111.entitlements */,
 				B4A2035D29742E070029D220 /* Preview Content */,
@@ -139,7 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4A2035929742E060029D220 /* ContentView.swift in Sources */,
+				B41D59B229A1D8B800D9BD46 /* StateBootcamp.swift in Sources */,
+				B46713D1297FE22B00BE467F /* ContentView.swift in Sources */,
+				B41814C82998CED6007AF3FE /* MainView.swift in Sources */,
 				B4A2035729742E060029D220 /* pratice1111App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
