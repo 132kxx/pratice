@@ -10,6 +10,8 @@
 		B41814C82998CED6007AF3FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41814C72998CED6007AF3FE /* MainView.swift */; };
 		B41D59B229A1D8B800D9BD46 /* StateBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D59B129A1D8B700D9BD46 /* StateBootcamp.swift */; };
 		B46713D1297FE22B00BE467F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46713D0297FE22B00BE467F /* ContentView.swift */; };
+		B488D6C429A3500900E84339 /* BindingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488D6C329A3500900E84339 /* BindingBootcamp.swift */; };
+		B488D6C629A352D800E84339 /* ConditionalBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488D6C529A352D800E84339 /* ConditionalBootcamp.swift */; };
 		B4A2035729742E060029D220 /* pratice1111App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A2035629742E060029D220 /* pratice1111App.swift */; };
 		B4A2035B29742E070029D220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A2035A29742E070029D220 /* Assets.xcassets */; };
 		B4A2035F29742E070029D220 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A2035E29742E070029D220 /* Preview Assets.xcassets */; };
@@ -19,6 +21,8 @@
 		B41814C72998CED6007AF3FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B41D59B129A1D8B700D9BD46 /* StateBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateBootcamp.swift; sourceTree = "<group>"; };
 		B46713D0297FE22B00BE467F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B488D6C329A3500900E84339 /* BindingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingBootcamp.swift; sourceTree = "<group>"; };
+		B488D6C529A352D800E84339 /* ConditionalBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalBootcamp.swift; sourceTree = "<group>"; };
 		B4A2035329742E060029D220 /* pratice1111.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pratice1111.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A2035629742E060029D220 /* pratice1111App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pratice1111App.swift; sourceTree = "<group>"; };
 		B4A2035A29742E070029D220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +45,8 @@
 			isa = PBXGroup;
 			children = (
 				B41D59B129A1D8B700D9BD46 /* StateBootcamp.swift */,
+				B488D6C329A3500900E84339 /* BindingBootcamp.swift */,
+				B488D6C529A352D800E84339 /* ConditionalBootcamp.swift */,
 			);
 			path = Bootcamp;
 			sourceTree = "<group>";
@@ -156,6 +162,8 @@
 				B41D59B229A1D8B800D9BD46 /* StateBootcamp.swift in Sources */,
 				B46713D1297FE22B00BE467F /* ContentView.swift in Sources */,
 				B41814C82998CED6007AF3FE /* MainView.swift in Sources */,
+				B488D6C629A352D800E84339 /* ConditionalBootcamp.swift in Sources */,
+				B488D6C429A3500900E84339 /* BindingBootcamp.swift in Sources */,
 				B4A2035729742E060029D220 /* pratice1111App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
