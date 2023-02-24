@@ -16,6 +16,10 @@
 		B4A2035729742E060029D220 /* pratice1111App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A2035629742E060029D220 /* pratice1111App.swift */; };
 		B4A2035B29742E070029D220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A2035A29742E070029D220 /* Assets.xcassets */; };
 		B4A2035F29742E070029D220 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A2035E29742E070029D220 /* Preview Assets.xcassets */; };
+		B4B164F729A841F900C501AC /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B164F629A841F900C501AC /* AlertView.swift */; };
+		B4B164F929A858A100C501AC /* ActionsheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B164F829A858A100C501AC /* ActionsheetView.swift */; };
+		B4B164FB29A86ED500C501AC /* ContextMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B164FA29A86ED500C501AC /* ContextMenuView.swift */; };
+		B4B164FE29A8708500C501AC /* TextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B164FD29A8708500C501AC /* TextfieldView.swift */; };
 		B4D11F0029A6F74100B25500 /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D11EFF29A6F74100B25500 /* Popover.swift */; };
 		B4D11F0229A70C8A00B25500 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D11F0129A70C8A00B25500 /* NavigationView.swift */; };
 		B4D11F0429A72B2C00B25500 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D11F0329A72B2C00B25500 /* ListView.swift */; };
@@ -37,6 +41,10 @@
 		B4A2035A29742E070029D220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4A2035C29742E070029D220 /* pratice1111.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pratice1111.entitlements; sourceTree = "<group>"; };
 		B4A2035E29742E070029D220 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B4B164F629A841F900C501AC /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		B4B164F829A858A100C501AC /* ActionsheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsheetView.swift; sourceTree = "<group>"; };
+		B4B164FA29A86ED500C501AC /* ContextMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuView.swift; sourceTree = "<group>"; };
+		B4B164FD29A8708500C501AC /* TextfieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldView.swift; sourceTree = "<group>"; };
 		B4D11EFF29A6F74100B25500 /* Popover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popover.swift; sourceTree = "<group>"; };
 		B4D11F0129A70C8A00B25500 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		B4D11F0329A72B2C00B25500 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -71,6 +79,10 @@
 				B4D11EFF29A6F74100B25500 /* Popover.swift */,
 				B4D11F0129A70C8A00B25500 /* NavigationView.swift */,
 				B4D11F0329A72B2C00B25500 /* ListView.swift */,
+				B4B164F629A841F900C501AC /* AlertView.swift */,
+				B4B164F829A858A100C501AC /* ActionsheetView.swift */,
+				B4B164FA29A86ED500C501AC /* ContextMenuView.swift */,
+				B4B164FD29A8708500C501AC /* TextfieldView.swift */,
 			);
 			path = Bootcamp;
 			sourceTree = "<group>";
@@ -185,13 +197,17 @@
 			files = (
 				B41D59B229A1D8B800D9BD46 /* StateBootcamp.swift in Sources */,
 				B4D651A829A5F4F0004060F9 /* Sheets.swift in Sources */,
+				B4B164F929A858A100C501AC /* ActionsheetView.swift in Sources */,
 				B46713D1297FE22B00BE467F /* ContentView.swift in Sources */,
+				B4B164FE29A8708500C501AC /* TextfieldView.swift in Sources */,
+				B4B164F729A841F900C501AC /* AlertView.swift in Sources */,
 				B459698729A5C9CC0087B4C6 /* TernaryBootcamp.swift in Sources */,
 				B41814C82998CED6007AF3FE /* MainView.swift in Sources */,
 				B4D651A429A5DFD4004060F9 /* AnimationTimingBootcamp.swift in Sources */,
 				B488D6C629A352D800E84339 /* ConditionalBootcamp.swift in Sources */,
 				B4D11F0029A6F74100B25500 /* Popover.swift in Sources */,
 				B488D6C429A3500900E84339 /* BindingBootcamp.swift in Sources */,
+				B4B164FB29A86ED500C501AC /* ContextMenuView.swift in Sources */,
 				B4D11F0429A72B2C00B25500 /* ListView.swift in Sources */,
 				B4D11F0229A70C8A00B25500 /* NavigationView.swift in Sources */,
 				B4D651A629A5E99D004060F9 /* TransitionBootcamp.swift in Sources */,
