@@ -11,6 +11,10 @@
 		B41D59B229A1D8B800D9BD46 /* StateBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D59B129A1D8B700D9BD46 /* StateBootcamp.swift */; };
 		B459698729A5C9CC0087B4C6 /* TernaryBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B459698629A5C9CC0087B4C6 /* TernaryBootcamp.swift */; };
 		B46713D1297FE22B00BE467F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46713D0297FE22B00BE467F /* ContentView.swift */; };
+		B46AC7BB29AB066B0003E9D1 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AC7BA29AB066B0003E9D1 /* PickerView.swift */; };
+		B46AC7BD29AB10040003E9D1 /* Documentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AC7BC29AB10040003E9D1 /* Documentation.swift */; };
+		B46AC7BF29AB1A110003E9D1 /* ViewModelpractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AC7BE29AB1A100003E9D1 /* ViewModelpractice.swift */; };
+		B46AC7C129AB31990003E9D1 /* Modelpractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AC7C029AB31990003E9D1 /* Modelpractice.swift */; };
 		B488D6C429A3500900E84339 /* BindingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488D6C329A3500900E84339 /* BindingBootcamp.swift */; };
 		B488D6C629A352D800E84339 /* ConditionalBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488D6C529A352D800E84339 /* ConditionalBootcamp.swift */; };
 		B4A2035729742E060029D220 /* pratice1111App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A2035629742E060029D220 /* pratice1111App.swift */; };
@@ -36,6 +40,10 @@
 		B41D59B129A1D8B700D9BD46 /* StateBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateBootcamp.swift; sourceTree = "<group>"; };
 		B459698629A5C9CC0087B4C6 /* TernaryBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TernaryBootcamp.swift; sourceTree = "<group>"; };
 		B46713D0297FE22B00BE467F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B46AC7BA29AB066B0003E9D1 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		B46AC7BC29AB10040003E9D1 /* Documentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Documentation.swift; sourceTree = "<group>"; };
+		B46AC7BE29AB1A100003E9D1 /* ViewModelpractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelpractice.swift; sourceTree = "<group>"; };
+		B46AC7C029AB31990003E9D1 /* Modelpractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelpractice.swift; sourceTree = "<group>"; };
 		B488D6C329A3500900E84339 /* BindingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingBootcamp.swift; sourceTree = "<group>"; };
 		B488D6C529A352D800E84339 /* ConditionalBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalBootcamp.swift; sourceTree = "<group>"; };
 		B4A2035329742E060029D220 /* pratice1111.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pratice1111.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +97,10 @@
 				B4B164FD29A8708500C501AC /* TextfieldView.swift */,
 				B4CF904829A9022000714B1E /* TextEditorView.swift */,
 				B4CF904A29A904A500714B1E /* ToggleView.swift */,
+				B46AC7BA29AB066B0003E9D1 /* PickerView.swift */,
+				B46AC7BC29AB10040003E9D1 /* Documentation.swift */,
+				B46AC7C029AB31990003E9D1 /* Modelpractice.swift */,
+				B46AC7BE29AB1A100003E9D1 /* ViewModelpractice.swift */,
 			);
 			path = Bootcamp;
 			sourceTree = "<group>";
@@ -205,7 +217,9 @@
 				B4D651A829A5F4F0004060F9 /* Sheets.swift in Sources */,
 				B4B164F929A858A100C501AC /* ActionsheetView.swift in Sources */,
 				B46713D1297FE22B00BE467F /* ContentView.swift in Sources */,
+				B46AC7BD29AB10040003E9D1 /* Documentation.swift in Sources */,
 				B4B164FE29A8708500C501AC /* TextfieldView.swift in Sources */,
+				B46AC7BB29AB066B0003E9D1 /* PickerView.swift in Sources */,
 				B4B164F729A841F900C501AC /* AlertView.swift in Sources */,
 				B459698729A5C9CC0087B4C6 /* TernaryBootcamp.swift in Sources */,
 				B41814C82998CED6007AF3FE /* MainView.swift in Sources */,
@@ -217,10 +231,12 @@
 				B4B164FB29A86ED500C501AC /* ContextMenuView.swift in Sources */,
 				B4D11F0429A72B2C00B25500 /* ListView.swift in Sources */,
 				B4D11F0229A70C8A00B25500 /* NavigationView.swift in Sources */,
+				B46AC7C129AB31990003E9D1 /* Modelpractice.swift in Sources */,
 				B4D651A629A5E99D004060F9 /* TransitionBootcamp.swift in Sources */,
 				B4A2035729742E060029D220 /* pratice1111App.swift in Sources */,
 				B4D651A229A5DD02004060F9 /* AnimationBootcamp.swift in Sources */,
 				B4CF904929A9022000714B1E /* TextEditorView.swift in Sources */,
+				B46AC7BF29AB1A110003E9D1 /* ViewModelpractice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
