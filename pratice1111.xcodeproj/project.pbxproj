@@ -33,6 +33,7 @@
 		B4D651A429A5DFD4004060F9 /* AnimationTimingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D651A329A5DFD4004060F9 /* AnimationTimingBootcamp.swift */; };
 		B4D651A629A5E99D004060F9 /* TransitionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D651A529A5E99D004060F9 /* TransitionBootcamp.swift */; };
 		B4D651A829A5F4F0004060F9 /* Sheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D651A729A5F4F0004060F9 /* Sheets.swift */; };
+		B4D8C1F229ACF3CA0008E226 /* IfLetGuardpractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D8C1F129ACF3CA0008E226 /* IfLetGuardpractice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		B4D651A329A5DFD4004060F9 /* AnimationTimingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTimingBootcamp.swift; sourceTree = "<group>"; };
 		B4D651A529A5E99D004060F9 /* TransitionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionBootcamp.swift; sourceTree = "<group>"; };
 		B4D651A729A5F4F0004060F9 /* Sheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheets.swift; sourceTree = "<group>"; };
+		B4D8C1F129ACF3CA0008E226 /* IfLetGuardpractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLetGuardpractice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				B46AC7BC29AB10040003E9D1 /* Documentation.swift */,
 				B46AC7C029AB31990003E9D1 /* Modelpractice.swift */,
 				B46AC7BE29AB1A100003E9D1 /* ViewModelpractice.swift */,
+				B4D8C1F129ACF3CA0008E226 /* IfLetGuardpractice.swift */,
 			);
 			path = Bootcamp;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				B46713D1297FE22B00BE467F /* ContentView.swift in Sources */,
 				B46AC7BD29AB10040003E9D1 /* Documentation.swift in Sources */,
 				B4B164FE29A8708500C501AC /* TextfieldView.swift in Sources */,
+				B4D8C1F229ACF3CA0008E226 /* IfLetGuardpractice.swift in Sources */,
 				B46AC7BB29AB066B0003E9D1 /* PickerView.swift in Sources */,
 				B4B164F729A841F900C501AC /* AlertView.swift in Sources */,
 				B459698729A5C9CC0087B4C6 /* TernaryBootcamp.swift in Sources */,
