@@ -7,273 +7,210 @@
 
 import SwiftUI
 
-
-
 struct OnboardingView: View {
     
-    // Onbaording States:
+    //onboading states:
     /*
      0 - welcome screen
-     1 - Add name
-     2 - Add age
-     3 - Add gender
+     1 - username view
+     2 - select age view
+     3 - select gender view
      */
     
     
     @State var onboardingState: Int = 0
-    let transition: AnyTransition = .asymmetric(
-        insertion: .move(edge: .trailing),
-        removal: .move(edge: .leading))
+    @State var username: String = ""
+    @State var userage: Double = 30
+    @State var usergender: String = ""
     
-    // Onboarding inputs
-    @State var name: String = ""
-    @State var age: Double = 50
-    @State var gender: String = ""
-
-    //for the alert
-    @State var alertTitle: String = ""
-    @State var showAlert: Bool = false
-    
-    // app storage
-    @AppStorage("name") var currentUserName: String?
-    @AppStorage("age") var currentUserAge: Int?
-    @AppStorage("gender") var currentUserGender: String?
-    @AppStorage("signed_in") var currentUserSignedIn: Bool = false
-
-    
+    @State var transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
     var body: some View {
         ZStack {
-            // content
+            
+            //content
             ZStack {
                 switch onboardingState {
                 case 0:
-                    welcomSection
+                    welcomeSection
                         .transition(transition)
+                    
                 case 1:
                     addNameSection
                         .transition(transition)
+                    
                 case 2:
                     addAgeSection
                         .transition(transition)
+                    
                 case 3:
                     addGenderSection
                         .transition(transition)
-                default:
-                    RoundedRectangle(cornerRadius: 25.0)
-                        .foregroundColor(.green)
-                        .transition(.move(edge: .bottom))
                     
+                default :
+                    RoundedRectangle(cornerRadius: 20)
                 }
-                
-                // buttons
-                VStack {
-                    Spacer()
-                    bottomButton
-                }
-                .padding(30)
             }
-            .alert(isPresented: $showAlert) {
-                return Alert(title: Text(alertTitle))
+            
+            //buttons
+            VStack {
+                Spacer()
+                bottomButton
             }
+            .padding(30)
+
+
         }
     }
-
 }
 
-struct OnboardingView_Previews: PreviewProvider {
-    static var previews: some View {
-        IntroView()
-    }
-}
 
-// MARK: COMPONETS
+
+
+
+
+//MARK: COMPONENT
 extension OnboardingView {
     
     private var bottomButton: some View {
-        Text(onboardingState == 0 ? "Sign Up" : onboardingState == 3 ? "Finish" : "Next")
+        Text("sign in")
             .font(.headline)
             .foregroundColor(.purple)
             .frame(height: 55)
             .frame(maxWidth: .infinity)
             .background(Color.white)
             .cornerRadius(10)
-            .animation(nil, value: onboardingState)
             .onTapGesture {
-                handleNextButtonPressed()
-        }
+                signUpButton()
+            }
     }
     
-    private var welcomSection: some View {
+    private var welcomeSection: some View {
         VStack(spacing: 40) {
             Spacer()
+            
             Image(systemName: "heart.text.square.fill")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200, height: 200)
                 .foregroundColor(.white)
-            Text("Find your match.")
-                .font(.largeTitle)
+            
+            Text("Find your match")
+                .font(.title)
                 .fontWeight(.semibold)
                 .foregroundColor(.white)
                 .overlay {
                     Capsule(style: .continuous)
                         .frame(height: 3, alignment: .bottom)
-                        .offset(y: 25)
-                        .foregroundColor(.white)
-                    
+                        .offset(y: 15)
                     
                 }
-            Text("This is the #1 app for finding your match online! In this tutorial we are practicing using appsotrage and other swiftUI tech")
+            
+            Text("asfjkash jkvzxjvklsdj flaksjd kvlzjxcvklx jv zjlkfjs adlkvjzx vasfjkash jkvzxjvklsdj flaksjd kvlzjxcvklx jv zjlkfjs adlkvjzx vkl jasfjkash jkvzxjvklsdj flaksjd kvlzjxcvklx jv zjlkfjs adlkvjzx vkl jkl j")
                 .fontWeight(.medium)
                 .foregroundColor(.white)
+                .multilineTextAlignment(.center)
             Spacer()
             Spacer()
-            
         }
-        .multilineTextAlignment(.center)
         .padding(30)
     }
     
-
-    
     private var addNameSection: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 40) {
             Spacer()
-           
-            Text("what's your name.")
-                .font(.largeTitle)
+            
+            Text("what's your name?")
+                .font(.title)
                 .fontWeight(.semibold)
                 .foregroundColor(.white)
+                
             
-            TextField("your name here...", text: $name)
+           TextField("이름을 입력해주세요", text: $username)
                 .font(.headline)
                 .frame(height: 55)
                 .padding(.horizontal)
                 .background(Color.white)
                 .cornerRadius(10)
             
-            
-           
             Spacer()
             Spacer()
-            
         }
         .padding(30)
     }
     
-    
     private var addAgeSection: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 40) {
             Spacer()
-           
-            Text("what's your age.")
-                .font(.largeTitle)
+            
+            Text("what's your age?")
+                .font(.title)
                 .fontWeight(.semibold)
                 .foregroundColor(.white)
-
-            Text("\(String(format: "%.0f", age))")
-                .font(.largeTitle)
+                
+            Text(String(format: "%.0f", userage))
+                .font(.title)
                 .fontWeight(.semibold)
                 .foregroundColor(.white)
-
             
-            Slider(value: $age, in: 18 ... 100, step: 1)
-                .tint(.white)
             
-           
+            Slider(value: $userage, in: 18 ... 99, step: 1)
+            
             Spacer()
             Spacer()
-            
         }
         .padding(30)
     }
     
     private var addGenderSection: some View {
-        VStack(spacing: 20) {
-            Spacer()
-           
-            Text("what's your gender")
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-                .foregroundColor(.white)
-
-            Menu {
-                Picker(selection: $gender) {
-                    Text("Male").tag("Male")
-                    Text("Female").tag("Female")
-                    Text("Non-Binary").tag("Non-Binary")
-                } label: {
-                   EmptyView()
-                }
-            } label: {
-                Text(gender.count > 1 ? gender : "what's your gender.")
-                    .font(.headline)
-                    .fontWeight(.semibold)
-                    .frame(height: 55)
-                    .frame(maxWidth: .infinity)
-                    .foregroundColor(.purple)
-                    .background(Color.white)
-                    .cornerRadius(10)
-                
-            }
-
-
-           
-            Spacer()
+        VStack(spacing: 40) {
             Spacer()
             
+            Text("what's your gender?")
+                .font(.title)
+                .fontWeight(.semibold)
+                .foregroundColor(.white)
+                
+            Menu {
+                Picker(selection: $usergender) {
+                    Text("male").tag("male")
+                    Text("female").tag("female")
+                    Text("nonbi").tag("nonbi")
+                } label: {
+                    EmptyView()
+                }
+
+
+            } label: {
+                Text(usergender.count > 1 ? usergender : "Select a gender")
+                    .font(.headline)
+                    .frame(height: 55)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.white)
+                    .cornerRadius(10)
+            }
+            
+            Spacer()
+            Spacer()
         }
         .padding(30)
     }
+    
+   
 }
 
-// MARK: FUNCTIONS
+// MARK: FUNCTION
 extension OnboardingView {
-    
-    
-    func handleNextButtonPressed(){
-        
-         //CHECK INPUTS
-        switch onboardingState {
-        case 1:
-            guard name.count >= 3 else {
-                showAlert(title: "your name must be at 3 char")
-                return
-            }
-            
-        case 3:
-            guard gender.count > 1 else {
-                showAlert(title: "please select a gender before moving forward")
-                return
-            }
-        default:
-            break
-        }
-        
-        // GO TO NEXT SECTION
-        if onboardingState == 3 {
-            //sign in
-            signIn()
-            
-        } else {
-            withAnimation(.spring()) {
-                onboardingState += 1
-            }
-        }
-    }
-    
-    func signIn() {
-        currentUserName = name
-        currentUserAge = Int(age)
-        currentUserGender = gender
+    func signUpButton() {
         withAnimation(.spring()) {
-            currentUserSignedIn = true
+            onboardingState += 1
         }
-       
     }
-    
-    func showAlert(title: String) {
-        alertTitle = title
-        showAlert.toggle()
+}
+
+
+
+struct OnboardingView_Previews: PreviewProvider {
+    static var previews: some View {
+        IntroView()
     }
 }

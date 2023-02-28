@@ -1,9 +1,9 @@
-//
-//  IntroView.swift
-//  pratice1111
-//
-//  Created by kxx: on 2023/02/28.
-//
+
+
+
+
+
+
 
 import SwiftUI
 
@@ -14,32 +14,22 @@ struct IntroView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(colors: [.purple, .orange], startPoint: .bottom, endPoint: .top)
+            LinearGradient(colors: [.purple, .orange], startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             
-            
             if currentUserSignedIn {
-                ProfileView()
-                    .transition(.asymmetric(insertion: .move(edge: .bottom), removal: .move(edge: .top)))
+                Text("profile View")
             } else {
                 OnboardingView()
-                    .transition(.asymmetric(insertion: .move(edge: .top), removal: .move(edge: .bottom)))
             }
-            
-            // if user is signed in
-            
-            
-            // profile view
-            
-            
-            // else
-            
-            
-            //onboarding view
-            
+
+          
         }
     }
+    
+    
 }
+
 
 struct IntroView_Previews: PreviewProvider {
     static var previews: some View {
