@@ -17,13 +17,24 @@ struct OnboardingView: View {
      3 - select gender view
      */
     
+    @State var transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
     
-    @State var onboardingState: Int = 0
+    // onboarding
+    @State var onboardingState: Int = 1
     @State var username: String = ""
     @State var userage: Double = 30
     @State var usergender: String = ""
     
-    @State var transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
+    // for the alert
+    @State var alertTitle: String = ""
+    @State var showAlert: Bool = false
+    
+   // app storage
+    @AppStorage("username") var currentUserName: String?
+    @AppStorage("userage") var currentUserAge: Int?
+    @AppStorage("usergender") var currentUserGender: String?
+    @AppStorage("signed_in") var currentUserSignedIn: Bool = false
+    
     var body: some View {
         ZStack {
             
@@ -60,6 +71,9 @@ struct OnboardingView: View {
 
 
         }
+        .alert(isPresented: $showAlert) {
+            return Alert(title: Text(alertTitle))
+        }
     }
 }
 
@@ -72,13 +86,14 @@ struct OnboardingView: View {
 extension OnboardingView {
     
     private var bottomButton: some View {
-        Text("sign in")
+        Text(onboardingState == 0 ? "Sign Up" : onboardingState == 3 ? "Finish" : "Next")
             .font(.headline)
             .foregroundColor(.purple)
             .frame(height: 55)
             .frame(maxWidth: .infinity)
             .background(Color.white)
             .cornerRadius(10)
+            .animation(nil, value: onboardingState)
             .onTapGesture {
                 signUpButton()
             }
@@ -102,13 +117,15 @@ extension OnboardingView {
                     Capsule(style: .continuous)
                         .frame(height: 3, alignment: .bottom)
                         .offset(y: 15)
+                        .foregroundColor(.white)
                     
                 }
             
-            Text("asfjkash jkvzxjvklsdj flaksjd kvlzjxcvklx jv zjlkfjs adlkvjzx vasfjkash jkvzxjvklsdj flaksjd kvlzjxcvklx jv zjlkfjs adlkvjzx vkl jasfjkash jkvzxjvklsdj flaksjd kvlzjxcvklx jv zjlkfjs adlkvjzx vkl jkl j")
+            Text("In this video we will review a lot of what we have learned so far in the SwiftUI Bootcamp. We will create a fake user onboarding experience in which a user can sign up, add their name, age, gender, and then log in to our application.")
                 .fontWeight(.medium)
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
+            
             Spacer()
             Spacer()
         }
@@ -198,19 +215,58 @@ extension OnboardingView {
    
 }
 
+
 // MARK: FUNCTION
 extension OnboardingView {
+    
     func signUpButton() {
-        withAnimation(.spring()) {
-            onboardingState += 1
+        // CHECK INPUTS
+        switch onboardingState {
+        case 1:
+            guard username.count >= 3 else {
+                showAlert(title: "3글자 이상 입력해주세요")
+                return
+            }
+        case 3:
+            guard usergender.count > 1 else {
+                showAlert(title: "have to select gender")
+                return
+            }
+        default:
+            break
+        }
+        
+        // Go To Next
+        if onboardingState == 3 {
+//            currentUserSignedIn = true
+        } else {
+            withAnimation(.spring()) {
+                onboardingState += 1
+            }
         }
     }
+    
+    func signIn() {
+        currentUserName = username
+        currentUserAge = Int(userage)
+        currentUserGender = usergender
+        
+        withAnimation(.spring()) {
+            currentUserSignedIn = true
+        }
+    }
+    
+    func showAlert(title: String) {
+        alertTitle = "title"
+        showAlert.toggle()
+    }
+    
 }
 
 
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        IntroView()
+        OnboardingView()
     }
 }
