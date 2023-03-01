@@ -24,7 +24,7 @@ struct ListView: View {
                     ForEach(fruits, id: \.self) { fruit in
                         Text(fruit)
                     }
-                    .onDelete(perform: delete)
+//                    .onDelete(perform: delete)
                     .onMove(perform: move)
                 } header: {
                     Text("fruit")
@@ -63,9 +63,9 @@ struct ListView: View {
         }
     }
         
-    func delete(indexSet: IndexSet) {
-        fruits.remove(atOffsets: indexSet)
-    }
+//    func delete(indexSet: IndexSet) {
+//        fruits.remove(atOffsets: indexSet)
+//    }
     
     func move(index: IndexSet, newOffset: Int) {
         fruits.move(fromOffsets: index, toOffset: newOffset)

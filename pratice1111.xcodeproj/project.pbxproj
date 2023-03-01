@@ -14,6 +14,7 @@
 		B41D59B229A1D8B800D9BD46 /* StateBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D59B129A1D8B700D9BD46 /* StateBootcamp.swift */; };
 		B429BC3229ADFF0A002E9A43 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B429BC3129ADFF0A002E9A43 /* ProfileView.swift */; };
 		B42C010E29ADD78D00FA6363 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42C010D29ADD78D00FA6363 /* OnboardingView.swift */; };
+		B43220F729AF74D0004C7664 /* badgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43220F629AF74D0004C7664 /* badgeView.swift */; };
 		B459698729A5C9CC0087B4C6 /* TernaryBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B459698629A5C9CC0087B4C6 /* TernaryBootcamp.swift */; };
 		B46713D1297FE22B00BE467F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46713D0297FE22B00BE467F /* ContentView.swift */; };
 		B46AC7BB29AB066B0003E9D1 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AC7BA29AB066B0003E9D1 /* PickerView.swift */; };
@@ -29,6 +30,8 @@
 		B4B164F929A858A100C501AC /* ActionsheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B164F829A858A100C501AC /* ActionsheetView.swift */; };
 		B4B164FB29A86ED500C501AC /* ContextMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B164FA29A86ED500C501AC /* ContextMenuView.swift */; };
 		B4B164FE29A8708500C501AC /* TextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B164FD29A8708500C501AC /* TextfieldView.swift */; };
+		B4CDE75729AF4CA3004F2708 /* BgMaterials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CDE75629AF4CA3004F2708 /* BgMaterials.swift */; };
+		B4CDE75929AF56D2004F2708 /* List2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CDE75829AF56D2004F2708 /* List2View.swift */; };
 		B4CF904929A9022000714B1E /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF904829A9022000714B1E /* TextEditorView.swift */; };
 		B4CF904B29A904A500714B1E /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF904A29A904A500714B1E /* ToggleView.swift */; };
 		B4D11F0029A6F74100B25500 /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D11EFF29A6F74100B25500 /* Popover.swift */; };
@@ -49,6 +52,7 @@
 		B41D59B129A1D8B700D9BD46 /* StateBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateBootcamp.swift; sourceTree = "<group>"; };
 		B429BC3129ADFF0A002E9A43 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B42C010D29ADD78D00FA6363 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B43220F629AF74D0004C7664 /* badgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = badgeView.swift; sourceTree = "<group>"; };
 		B459698629A5C9CC0087B4C6 /* TernaryBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TernaryBootcamp.swift; sourceTree = "<group>"; };
 		B46713D0297FE22B00BE467F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B46AC7BA29AB066B0003E9D1 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 		B4B164F829A858A100C501AC /* ActionsheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsheetView.swift; sourceTree = "<group>"; };
 		B4B164FA29A86ED500C501AC /* ContextMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuView.swift; sourceTree = "<group>"; };
 		B4B164FD29A8708500C501AC /* TextfieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldView.swift; sourceTree = "<group>"; };
+		B4CDE75629AF4CA3004F2708 /* BgMaterials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BgMaterials.swift; sourceTree = "<group>"; };
+		B4CDE75829AF56D2004F2708 /* List2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List2View.swift; sourceTree = "<group>"; };
 		B4CF904829A9022000714B1E /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
 		B4CF904A29A904A500714B1E /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
 		B4D11EFF29A6F74100B25500 /* Popover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popover.swift; sourceTree = "<group>"; };
@@ -126,6 +132,9 @@
 				B4D8C1F129ACF3CA0008E226 /* IfLetGuardpractice.swift */,
 				B417047F29AD9975006AEFB6 /* AppStoragePractice.swift */,
 				B4185A7429AEE5410023A3A2 /* AsyncImageView.swift */,
+				B4CDE75629AF4CA3004F2708 /* BgMaterials.swift */,
+				B4CDE75829AF56D2004F2708 /* List2View.swift */,
+				B43220F629AF74D0004C7664 /* badgeView.swift */,
 				B417048329ADA151006AEFB6 /* OnboardingViews */,
 			);
 			path = Bootcamp;
@@ -242,6 +251,7 @@
 				B41D59B229A1D8B800D9BD46 /* StateBootcamp.swift in Sources */,
 				B4D651A829A5F4F0004060F9 /* Sheets.swift in Sources */,
 				B4B164F929A858A100C501AC /* ActionsheetView.swift in Sources */,
+				B43220F729AF74D0004C7664 /* badgeView.swift in Sources */,
 				B46713D1297FE22B00BE467F /* ContentView.swift in Sources */,
 				B46AC7BD29AB10040003E9D1 /* Documentation.swift in Sources */,
 				B4B164FE29A8708500C501AC /* TextfieldView.swift in Sources */,
@@ -258,11 +268,13 @@
 				B4D651A429A5DFD4004060F9 /* AnimationTimingBootcamp.swift in Sources */,
 				B488D6C629A352D800E84339 /* ConditionalBootcamp.swift in Sources */,
 				B4D11F0029A6F74100B25500 /* Popover.swift in Sources */,
+				B4CDE75929AF56D2004F2708 /* List2View.swift in Sources */,
 				B488D6C429A3500900E84339 /* BindingBootcamp.swift in Sources */,
 				B4B164FB29A86ED500C501AC /* ContextMenuView.swift in Sources */,
 				B4D11F0429A72B2C00B25500 /* ListView.swift in Sources */,
 				B4D11F0229A70C8A00B25500 /* NavigationView.swift in Sources */,
 				B46AC7C129AB31990003E9D1 /* Modelpractice.swift in Sources */,
+				B4CDE75729AF4CA3004F2708 /* BgMaterials.swift in Sources */,
 				B4D651A629A5E99D004060F9 /* TransitionBootcamp.swift in Sources */,
 				B4A2035729742E060029D220 /* pratice1111App.swift in Sources */,
 				B417048229AD9F6A006AEFB6 /* IntroView.swift in Sources */,
