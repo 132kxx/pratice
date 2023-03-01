@@ -20,7 +20,7 @@ struct OnboardingView: View {
     @State var transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
     
     // onboarding
-    @State var onboardingState: Int = 1
+    @State var onboardingState: Int = 0
     @State var username: String = ""
     @State var userage: Double = 30
     @State var usergender: String = ""
@@ -212,7 +212,6 @@ extension OnboardingView {
         .padding(30)
     }
     
-   
 }
 
 
@@ -238,7 +237,7 @@ extension OnboardingView {
         
         // Go To Next
         if onboardingState == 3 {
-//            currentUserSignedIn = true
+            signIn()
         } else {
             withAnimation(.spring()) {
                 onboardingState += 1
@@ -267,6 +266,6 @@ extension OnboardingView {
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        IntroView()
     }
 }

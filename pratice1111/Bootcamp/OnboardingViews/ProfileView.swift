@@ -24,6 +24,35 @@ struct ProfileView: View {
             Text(currentUserName ?? "unknown")
             Text("\(currentUserAge ?? 0)")
             Text(currentUserGender ?? "unknown")
+            Text("sign out".uppercased())
+                .foregroundColor(.white)
+                .font(.headline)
+                .frame(minHeight: 55)
+                .frame(maxWidth: .infinity)
+                .background(Color.black)
+                .cornerRadius(10)
+                .onTapGesture {
+                    signOut()
+                }
+                
+        }
+        .font(.title)
+        .padding(10)
+        .padding(.vertical, 40)
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 10)
+      
+       
+        
+    }
+    
+    func signOut() {
+        currentUserAge = nil
+        currentUserName = nil
+        currentUserGender = nil
+        withAnimation(.spring()) {
+            currentUserSignedIn = false
         }
     }
 }

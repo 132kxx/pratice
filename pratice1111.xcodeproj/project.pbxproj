@@ -10,6 +10,7 @@
 		B417048029AD9975006AEFB6 /* AppStoragePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417047F29AD9975006AEFB6 /* AppStoragePractice.swift */; };
 		B417048229AD9F6A006AEFB6 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417048129AD9F6A006AEFB6 /* IntroView.swift */; };
 		B41814C82998CED6007AF3FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41814C72998CED6007AF3FE /* MainView.swift */; };
+		B4185A7529AEE5410023A3A2 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185A7429AEE5410023A3A2 /* AsyncImageView.swift */; };
 		B41D59B229A1D8B800D9BD46 /* StateBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D59B129A1D8B700D9BD46 /* StateBootcamp.swift */; };
 		B429BC3229ADFF0A002E9A43 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B429BC3129ADFF0A002E9A43 /* ProfileView.swift */; };
 		B42C010E29ADD78D00FA6363 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42C010D29ADD78D00FA6363 /* OnboardingView.swift */; };
@@ -44,6 +45,7 @@
 		B417047F29AD9975006AEFB6 /* AppStoragePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoragePractice.swift; sourceTree = "<group>"; };
 		B417048129AD9F6A006AEFB6 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		B41814C72998CED6007AF3FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B4185A7429AEE5410023A3A2 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		B41D59B129A1D8B700D9BD46 /* StateBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateBootcamp.swift; sourceTree = "<group>"; };
 		B429BC3129ADFF0A002E9A43 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B42C010D29ADD78D00FA6363 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				B46AC7BE29AB1A100003E9D1 /* ViewModelpractice.swift */,
 				B4D8C1F129ACF3CA0008E226 /* IfLetGuardpractice.swift */,
 				B417047F29AD9975006AEFB6 /* AppStoragePractice.swift */,
+				B4185A7429AEE5410023A3A2 /* AsyncImageView.swift */,
 				B417048329ADA151006AEFB6 /* OnboardingViews */,
 			);
 			path = Bootcamp;
@@ -246,6 +249,7 @@
 				B46AC7BB29AB066B0003E9D1 /* PickerView.swift in Sources */,
 				B417048029AD9975006AEFB6 /* AppStoragePractice.swift in Sources */,
 				B4B164F729A841F900C501AC /* AlertView.swift in Sources */,
+				B4185A7529AEE5410023A3A2 /* AsyncImageView.swift in Sources */,
 				B459698729A5C9CC0087B4C6 /* TernaryBootcamp.swift in Sources */,
 				B429BC3229ADFF0A002E9A43 /* ProfileView.swift in Sources */,
 				B41814C82998CED6007AF3FE /* MainView.swift in Sources */,
