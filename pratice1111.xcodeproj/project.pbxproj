@@ -26,6 +26,8 @@
 		B4A2035729742E060029D220 /* pratice1111App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A2035629742E060029D220 /* pratice1111App.swift */; };
 		B4A2035B29742E070029D220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A2035A29742E070029D220 /* Assets.xcassets */; };
 		B4A2035F29742E070029D220 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A2035E29742E070029D220 /* Preview Assets.xcassets */; };
+		B4AC157F29AFA2DE00030813 /* FocusStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC157E29AFA2DE00030813 /* FocusStateView.swift */; };
+		B4AC158129AFA97300030813 /* SubmitTextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC158029AFA97300030813 /* SubmitTextfieldView.swift */; };
 		B4B164F729A841F900C501AC /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B164F629A841F900C501AC /* AlertView.swift */; };
 		B4B164F929A858A100C501AC /* ActionsheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B164F829A858A100C501AC /* ActionsheetView.swift */; };
 		B4B164FB29A86ED500C501AC /* ContextMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B164FA29A86ED500C501AC /* ContextMenuView.swift */; };
@@ -66,6 +68,8 @@
 		B4A2035A29742E070029D220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4A2035C29742E070029D220 /* pratice1111.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pratice1111.entitlements; sourceTree = "<group>"; };
 		B4A2035E29742E070029D220 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B4AC157E29AFA2DE00030813 /* FocusStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusStateView.swift; sourceTree = "<group>"; };
+		B4AC158029AFA97300030813 /* SubmitTextfieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTextfieldView.swift; sourceTree = "<group>"; };
 		B4B164F629A841F900C501AC /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		B4B164F829A858A100C501AC /* ActionsheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsheetView.swift; sourceTree = "<group>"; };
 		B4B164FA29A86ED500C501AC /* ContextMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuView.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				B4CDE75629AF4CA3004F2708 /* BgMaterials.swift */,
 				B4CDE75829AF56D2004F2708 /* List2View.swift */,
 				B43220F629AF74D0004C7664 /* badgeView.swift */,
+				B4AC157E29AFA2DE00030813 /* FocusStateView.swift */,
+				B4AC158029AFA97300030813 /* SubmitTextfieldView.swift */,
 				B417048329ADA151006AEFB6 /* OnboardingViews */,
 			);
 			path = Bootcamp;
@@ -255,6 +261,7 @@
 				B46713D1297FE22B00BE467F /* ContentView.swift in Sources */,
 				B46AC7BD29AB10040003E9D1 /* Documentation.swift in Sources */,
 				B4B164FE29A8708500C501AC /* TextfieldView.swift in Sources */,
+				B4AC157F29AFA2DE00030813 /* FocusStateView.swift in Sources */,
 				B4D8C1F229ACF3CA0008E226 /* IfLetGuardpractice.swift in Sources */,
 				B46AC7BB29AB066B0003E9D1 /* PickerView.swift in Sources */,
 				B417048029AD9975006AEFB6 /* AppStoragePractice.swift in Sources */,
@@ -272,6 +279,7 @@
 				B488D6C429A3500900E84339 /* BindingBootcamp.swift in Sources */,
 				B4B164FB29A86ED500C501AC /* ContextMenuView.swift in Sources */,
 				B4D11F0429A72B2C00B25500 /* ListView.swift in Sources */,
+				B4AC158129AFA97300030813 /* SubmitTextfieldView.swift in Sources */,
 				B4D11F0229A70C8A00B25500 /* NavigationView.swift in Sources */,
 				B46AC7C129AB31990003E9D1 /* Modelpractice.swift in Sources */,
 				B4CDE75729AF4CA3004F2708 /* BgMaterials.swift in Sources */,
